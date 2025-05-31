@@ -25,18 +25,3 @@ where **`g(n)`** is the travel cost from the start, and **`h(n)`** is the heuris
 * **`getPathCost():`** Returns the total cost of the path found.
 * **`getSearchSize():`** Returns the number of nodes expanded during the search.
 * **`wasSearched(Coord):`** Returns whether a given location was examined.
-
-**Running the Pathfinder**
-
-To run the pathfinding algorithm and see it visualized:
-
-Use the provided visualizer. This class is designed to integrate into the existing project framework, and does not include a main method. The visualizer initializes the terrain and coordinates, and displays the computed path based on the Pathfinder output.
-
-Make sure to:
-1.) Set both the start and end coordinates via setPathStart() and setPathEnd().
-
-2.) Choose a heuristic weight using setHeuristic().
-
-3.) Call computePath() to execute the A* search.
-
-4.) Retrieve the path using getPathSolution() if a path was found.
